@@ -1,8 +1,8 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id = "nl.cssbreda.leergame2.app"
-        version = "2.0.0">
-    <name>Beeldend Trainen Leergame 2</name>
+        id = "nl.cssbreda.leergame.app"
+        version = "0.3.0">
+    <name>Beeldend Trainen Leergame</name>
 
     <description>
         Mobile application for the use of the Mobile Game of Beeldend Trainen/Visual Training
@@ -13,7 +13,7 @@
     </author>
     
     <content src="index.html" />
-    <access origin="http://leergame.mijnslp.nl" />
+    <access origin="http://leergame.cssbreda.nl" />
     <preference name="Fullscreen" value="true" />
     <preference name="WebViewBounce" value="true" />
     <preference name="Orientation" value="portrait" />
@@ -31,12 +31,11 @@
     <icon src="icon-120.png" gap:platform="ios" width="120" height="120" />
     <icon src="icon-152.png" gap:platform="ios" width="152" height="152" />
     
-    
-    <plugin name="com.phonegap.plugins.pushplugin" spec="2.5.0" source="pgb" />
-    
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     
     
-
+    <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+		<string>030</string>
+	</gap:config-file>
     
 </widget>
