@@ -13,11 +13,44 @@
     // device APIs are available
     //
     function onDeviceReady() {
-         var ref = window.open('http://leergame.mijnslp.nl', '_self', 'location=no');
-         //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
-         //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
-         //ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
-         //ref.addEventListener('exit', function(event) { alert(event.type); });
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      var push = PushNotification.init({
+          android: {
+              senderID: "332474725201"
+          },
+          ios: {
+              alert: "true",
+              badge: "true",
+              sound: "true"
+          },
+          windows: {}
+      });
+      
+      
+      
+      alert(push);
+      
+      
+      
+      
+      
+      
+      
+      
+       var ref = window.open('http://leergame.test.ooxo.nl', '_self', 'location=no');
+       //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+       //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+       //ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+       //ref.addEventListener('exit', function(event) { alert(event.type); });
     }
 
     </script>
