@@ -36,19 +36,40 @@
       });
       
       push.on('registration', function(data) {
+          
+          console.log(data.registrationId);
+          $("#gcm_id").html(data.registrationId);
+          
           alert(data.registrationId);
+          
+          
+          
+          
       });
       
       alert(push);
       
       
+      push.on('error', function(e) {
+        console.log(e.message);
+      });
       
       
       
       
       
-      
-       var ref = window.open('http://leergame.test.ooxo.nl', '_self', 'location=no');
+       //var ref = window.open('http://leergame.test.ooxo.nl', '_self', 'location=no');
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        //ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
        //ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
        //ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
@@ -58,5 +79,8 @@
     </script>
   </head>
   <body>
+    <h1>Push Notification Example</h1>
+Your GCM ID : <br/>
+<p id="gcm_id"></p>
   </body>
 </html>
