@@ -13,7 +13,7 @@
     </author>
     
     <content src="index.html" />
-    <access origin="http://leergame.mijnslp.nl" />
+    <access origin="http://leergame.test.ooxo.nl" />
     <preference name="Fullscreen" value="true" />
     <preference name="WebViewBounce" value="true" />
     <preference name="Orientation" value="portrait" />
