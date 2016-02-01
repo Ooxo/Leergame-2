@@ -2,7 +2,10 @@
 <html>
   <head>
     <title>Leergame BeT CSSBreda</title>
-
+    
+    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="push.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -43,6 +46,19 @@
           alert(data.registrationId);
           
           
+          $.post( "http://leergame.test.ooxo.nl/push_notifications/rest_server/push_notifications", { token=data.registrationId&type='android' })
+            .done(function( data ) {
+              alert( "Data Loaded: " + data );
+            });
+          
+          
+//          $.ajax({
+//            type: "POST",
+//            url: "http://leergame.test.ooxo.nl/push_notifications/rest_server/push_notifications",
+//            data: data,
+//            success: success,
+//            dataType: dataType
+//          });
           
           $("#gcm_id").html(data.registrationId);
           
