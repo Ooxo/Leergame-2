@@ -16,12 +16,12 @@
     
     <!--    <access origin="http://leergame.test.ooxo.nl" />        -->
     
-    
+    <access origin="*" />
     
     <preference name="Fullscreen" value="true" />
     <preference name="WebViewBounce" value="true" />
     <preference name="Orientation" value="portrait" />
-    <preference name="permissions" value="none"/>
+    <!-- <preference name="permissions" value="none"/> -->
 
     <icon src="icon.png" />
     
