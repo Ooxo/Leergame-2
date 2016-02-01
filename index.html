@@ -37,8 +37,13 @@
       });
       
       push.on('registration', function(data) {
-          
+          console.log("data.registrationId");
           console.log(data.registrationId);
+          alert("data.registrationId");
+          alert(data.registrationId);
+          
+          
+          
           $("#gcm_id").html(data.registrationId);
           
           alert(data.registrationId);
